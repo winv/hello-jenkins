@@ -3,11 +3,11 @@ WORKDIR /app
 EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.0-buster AS build
-WORKDIR /src
+WORKDIR /
 COPY ["hello-world/hello-world.csproj", "hello-world/"]
 RUN dotnet restore "hello-world/hello-world.csproj"
 COPY . .
-WORKDIR "/src/hello-world"
+WORKDIR "/hello-world"
 RUN dotnet build "hello-world.csproj" -c Release -o /app/build
 
 FROM build AS publish
