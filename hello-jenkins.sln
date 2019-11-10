@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hello-world", "hello-world\hello-world.csproj", "{B01EC098-A6C3-4E66-A304-101348099891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hello-world", "hello-world\hello-world.csproj", "{B01EC098-A6C3-4E66-A304-101348099891}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{582948E2-0945-41B7-AAFF-A7F728E5815F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hello-docker", "src\hello-docker\hello-docker.csproj", "{99BDCC8C-7EEE-4AC0-983C-FFEE6E79E2CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{B01EC098-A6C3-4E66-A304-101348099891}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B01EC098-A6C3-4E66-A304-101348099891}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B01EC098-A6C3-4E66-A304-101348099891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99BDCC8C-7EEE-4AC0-983C-FFEE6E79E2CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99BDCC8C-7EEE-4AC0-983C-FFEE6E79E2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99BDCC8C-7EEE-4AC0-983C-FFEE6E79E2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99BDCC8C-7EEE-4AC0-983C-FFEE6E79E2CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99BDCC8C-7EEE-4AC0-983C-FFEE6E79E2CE} = {582948E2-0945-41B7-AAFF-A7F728E5815F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43F5CC5A-403D-4A63-92C6-2BAE0507CDE5}
